@@ -62,3 +62,14 @@ function reverseStringWithDecrementalForLoop(str) {
 }
 
 console.log(reverseStringWithDecrementalForLoop("goodbye"));
+
+/* 
+  The third is way is by recursion. we 
+*/
+
+function reverseStringWithRecursion(str) {
+  if (str === "") return "";
+  else return reverseStringWithRecursion(str.sub(1)) + str.char(0);
+}
+
+console.log(reverseStringWithRecursion("goodbye"));
